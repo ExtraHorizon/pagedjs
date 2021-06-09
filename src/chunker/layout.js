@@ -171,10 +171,10 @@ class Layout {
 
 				newBreakToken = this.findBreakToken(wrapper, source, bounds, prevBreakToken);
 
-				if (newBreakToken && newBreakToken.equals(prevBreakToken)) {
-					console.warn("Unable to layout item: ", node);
-					return new RenderResult(undefined, new OverflowContentError("Unable to layout item", [node]));
-				}
+				// if (newBreakToken && newBreakToken.equals(prevBreakToken)) {
+				// console.warn("Unable to layout item: ", node);
+				// return new RenderResult(undefined, new OverflowContentError("Unable to layout item", [node]));
+				// }
 
 				if (newBreakToken) {
 					length = 0;
